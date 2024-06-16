@@ -40,6 +40,23 @@
       text-align: center;
       z-index: 1;
       color: white;
+      position: relative;
+    }
+
+    .title-container {
+      display: inline-block;
+      padding: 20px; /* Padding around the title */
+      background-color: #800080; /* Purple background color */
+      border: 2px solid white; /* White border */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Shadow effect */
+    }
+
+    .title {
+      font-size: 2em;
+      font-weight: bold; /* Make the font bold */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow */
+      margin: 0; /* Remove default margin */
     }
 
     .btn-container {
@@ -127,7 +144,9 @@
   <div class="stars"></div> <!-- Background div for moving stars -->
 
   <div class="content">
-    <h1>Whatsapp Bot</h1>
+    <div class="title-container">
+      <h1 class="title">Whatsapp Bot</h1>
+    </div>
     <div class="btn-container">
       <button onclick="window.open('/wasiqr')" class="btn">QR Code</button>
       <button onclick="window.open('/pair')" class="btn">Pair Code</button>
